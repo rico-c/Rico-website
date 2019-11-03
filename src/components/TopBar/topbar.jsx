@@ -19,7 +19,9 @@ export default class TopBar extends React.Component {
           <img src={require("../../assets/ios-wifi.png")} />
         </span>
         <span className="top-center">
-          {this.state.now.getHours()}:{this.state.now.getMinutes()}
+          {this.state.now.getHours()}:
+          {this.state.now.getMinutes() < 10 ? "0" : ""}
+          {this.state.now.getMinutes()}
         </span>
         <span className="top-right">
           <img src={require("../../assets/ios-battery-full.png")} />

@@ -1,0 +1,43 @@
+.home-page {
+  position: relative;
+  top: 25px;
+  box-sizing: border-box;
+  height: calc(100% - 25px);
+  .bottom-bar {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 80px;
+    background-color: #e0e0e0;
+    text-align: center;
+  }
+  .slide-bar {
+    width: 100%;
+    height: calc(100% - 80px);
+    .slide-wrapper {
+      height: calc(100% - 25px);
+    }
+  }
+  .slick-slide .app-section img {
+    margin: 0 auto;
+  }
+  .app-section {
+    width: 25%;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    margin-top: 5px;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    img:active {
+      opacity: 0.8;
+    }
+    span {
+      display: block;
+      font-size: 12px;
+    }
+  }
+}
