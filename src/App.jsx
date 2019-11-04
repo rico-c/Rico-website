@@ -16,18 +16,20 @@ class App extends React.Component {
       <div className={this.mobileDevice() ? "mobileApp" : "pcApp"}>
         <div className="device-container">
           <TopBar></TopBar>
-          <Router>
-            <Switch>
-              <Route path="/" exact component={HomePage} />
-              {Object.entries(routeInfo).map(([routeKey, routeValue]) => (
-                <Route
-                  key={routeKey}
-                  path={routeKey}
-                  component={routeValue.component}
-                />
-              ))}
-            </Switch>
-          </Router>
+          <div className="main-container">
+            <Router>
+              <Switch>
+                <Route path="/" exact component={HomePage} />
+                {Object.entries(routeInfo).map(([routeKey, routeValue]) => (
+                  <Route
+                    key={routeKey}
+                    path={routeKey}
+                    component={routeValue.component}
+                  />
+                ))}
+              </Switch>
+            </Router>
+          </div>
         </div>
       </div>
     );
