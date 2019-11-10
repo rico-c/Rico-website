@@ -1,4 +1,5 @@
 import React from "react";
+import {connect} from "react-redux";
 import { Icon } from "antd";
 import { Link } from "react-router-dom";
 import "./index.less";
@@ -8,8 +9,11 @@ export default class Setting extends React.Component {
     return (
       <div className="setting">
         <div className="setting-top">
+          <Link to="/" className="setting-back">
+            返回
+          </Link>
           <span>设置语言</span>
-          <Link to="/" class="setting-done">
+          <Link to="/" className="setting-done">
             完成
           </Link>
         </div>
@@ -30,5 +34,8 @@ export default class Setting extends React.Component {
       </div>
     );
   }
-  s;
+}
+
+function mapStateToProps(){
+  
 }
