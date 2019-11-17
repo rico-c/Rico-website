@@ -10,7 +10,7 @@ export default {
       cnName: "Github",
       enName: "Github",
       img: "github-icon",
-      jump: "/github"
+      jump: "https://github.com/rico-c"
     }
   ],
   slideApps: [

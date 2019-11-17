@@ -1,5 +1,6 @@
 import Setting from "../pages/Setting/setting";
 import Wechat from "../pages/Wechat/wechat";
+import Album from "../pages/Album/album";
 
 export default {
   "/setting": {
@@ -7,5 +8,8 @@ export default {
   },
   "/wechat": {
     component: Wechat
+  },
+  "/album": {
+    component: Album
   }
 };

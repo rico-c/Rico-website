@@ -1,18 +1,42 @@
 .home-page {
   position: relative;
   height: 100%;
+  .wall-paper{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width: 100%;
+    img{
+      margin: 0 auto;
+      height:100%;
+      z-index: -2;
+    }
+  }
   .bottom-bar {
+    .bottom-bg{
+      background-color: #bdbdbd;
+      width: 100%;
+      height: 100%;
+      opacity: 0.6;
+      position: absolute;
+      top:0;
+      left:0;
+      z-index: -1;
+    }
     position: absolute;
     width: 100%;
     bottom: 0;
     left: 0;
-    height: 80px;
-    background-color: #e0e0e0;
+    height: 75px;
     text-align: center;
+    z-index: 1;
   }
   .slide-bar {
     width: 100%;
     height: calc(100% - 80px);
+    position: relative;
+    z-index:1;
     .slide-wrapper {
       height: calc(100% - 25px);
     }

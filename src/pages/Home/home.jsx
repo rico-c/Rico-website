@@ -2,6 +2,7 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import Slider from "react-slick";
 import homeApps from "../../data/homeApps";
+import { connect } from "react-redux";
 
 import "./index.less";
 import "slick-carousel/slick/slick.css";
@@ -9,7 +10,12 @@ import "slick-carousel/slick/slick-theme.css";
 
 class Home extends React.Component {
   handleClickApp(path) {
-    this.props.history.push(path);
+    if(path.includes('http')){
+      window.location.href = path;
+    }
+    else{
+      this.props.history.push(path);
+    }
   }
   render() {
     const slideSettings = {
@@ -35,7 +41,11 @@ class Home extends React.Component {
                     onClick={e => this.handleClickApp(app.jump)}
                   >
                     <img src={require(`../../assets/${app.img}.png`)}></img>
-                    <span>{app.cnName}</span>
+                    {this.props.lang === "zh" ? (
+                      <span>{app.cnName}</span>
+                    ) : (
+                      <span>{app.enName}</span>
+                    )}
                   </div>
                 ))}
               </div>
@@ -43,6 +53,7 @@ class Home extends React.Component {
           </Slider>
         </div>
         <div className="bottom-bar">
+          <div className="bottom-bg"></div>
           {homeApps.bottomApps.map(app => (
             <div
               key={app.enName}
@@ -50,13 +61,26 @@ class Home extends React.Component {
               onClick={e => this.handleClickApp(app.jump)}
             >
               <img src={require(`../../assets/${app.img}.png`)}></img>
-              <span>{app.cnName}</span>
+              {this.props.lang === "zh" ? (
+                <span>{app.cnName}</span>
+              ) : (
+                <span>{app.enName}</span>
+              )}
             </div>
           ))}
+        </div>
+        <div className="wall-paper">
+          <img src={require("../../assets/wallpaper3.jpeg")} />
         </div>
       </div>
     );
   }
 }
 
-export default withRouter(Home);
+const mapStateToProps = (state, ownProps) => {
+  return {
+    lang: state.settingReducer.lang
+  };
+};
+
+export default connect(mapStateToProps)(withRouter(Home));
