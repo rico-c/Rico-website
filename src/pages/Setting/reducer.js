@@ -5,7 +5,7 @@ export function changeLanguage(lang) {
   }
 }
 
-export function reducer(state, action) {
+export function settingReducer(state = {lang: 'zh'}, action) {
   switch(action.type) {
     case 'CHANG_LANGUAGE': 
       return {...state, lang: action.lang};
