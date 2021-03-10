@@ -1472,7 +1472,7 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.3.tgz#bdfd69d61e464dcc81b25159c270d75a73c1a636"
   integrity sha512-Il2DtDVRGDcqjDtE+rF8iqg1CArehSK84HZJCT7AMITlyXRBpuPhqGLDQMowraqqu1coEaimg4ZOqggt6L6L+A==
 
-"@types/prop-types@*":
+"@types/prop-types@*", "@types/prop-types@^15.7.3":
   version "15.7.3"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
@@ -2423,10 +2423,10 @@ bluebird@^3.5.5:
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.1.tgz#df70e302b471d7473489acf26a93d63b53f874de"
   integrity sha512-DdmyoGCleJnkbp3nkbxTLJ18rjDsE4yCggEwKNXkeV123sPNfOCYeDoeuOY+F2FrSjO1YXcTU+dsy96KMy+gcg==
 
-bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.4.0:
-  version "4.11.8"
-  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.8.tgz#2cde09eb5ee341f484746bb0309b3253b1b1442f"
-  integrity sha512-ItfYfPLkWHUjckQCk8xC+LwxgK8NYcXywGigJgSwOP8Y2iyWT4f2vsZnoOXTTbo+o5yXmIUJ4gn5538SO5S3gA==
+bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.11.9:
+  version "4.12.0"
+  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.12.0.tgz#775b3f278efbb9718eec7361f483fb36fbbfea88"
+  integrity sha512-c98Bf3tPniI+scsdk237ku1Dc3ujXQTSgyiPUDEOe7tRkhrqridvh8klBv0HCEso1OLOYcHuCv/cS6DNxKH+ZA==
 
 body-parser@1.18.2:
   version "1.18.2"
@@ -2485,7 +2485,7 @@ braces@^2.3.0, braces@^2.3.1, braces@^2.3.2:
     split-string "^3.0.2"
     to-regex "^3.0.1"
 
-brorand@^1.0.1:
+brorand@^1.0.1, brorand@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/brorand/-/brorand-1.1.0.tgz#12c25efe40a45e3c323eb8675a0a0ce57b22371f"
   integrity sha1-EsJe/kCkXjwyPrhnWgoM5XsiNx8=
@@ -4037,17 +4037,17 @@ electron-to-chromium@^1.3.73:
   integrity sha512-6PIg7v9zRoVGh6EheRF8h6Plti+3Yo/qtHobS4/Htyt53DNHmKKGFqSae1AIk0k1S4gCQvt7I2WgpbuZNcDY+g==
 
 elliptic@^6.0.0:
-  version "6.4.1"
-  resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.4.1.tgz#c2d0b7776911b86722c632c3c06c60f2f819939a"
-  integrity sha512-BsXLz5sqX8OHcsh7CqBMztyXARmGQ3LWPtGjJi6DiJHq5C/qvi9P3OqgswKSDftbu8+IoI/QDTAm2fFnQ9SZSQ==
+  version "6.5.4"
+  resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.5.4.tgz#da37cebd31e79a1367e941b592ed1fbebd58abbb"
+  integrity sha512-iLhC6ULemrljPZb+QutR5TQGB+pdW6KGD5RSegS+8sorOZT+rdQFbsQFJgvN3eRqNALqJer4oQ16YvJHlU8hzQ==
   dependencies:
-    bn.js "^4.4.0"
-    brorand "^1.0.1"
+    bn.js "^4.11.9"
+    brorand "^1.1.0"
     hash.js "^1.0.0"
-    hmac-drbg "^1.0.0"
-    inherits "^2.0.1"
-    minimalistic-assert "^1.0.0"
-    minimalistic-crypto-utils "^1.0.0"
+    hmac-drbg "^1.0.1"
+    inherits "^2.0.4"
+    minimalistic-assert "^1.0.1"
+    minimalistic-crypto-utils "^1.0.1"
 
 emoji-regex@^7.0.1, emoji-regex@^7.0.2:
   version "7.0.3"
@@ -5267,9 +5267,9 @@ hash-base@^3.0.0:
     safe-buffer "^5.0.1"
 
 hash.js@^1.0.0, hash.js@^1.0.3:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/hash.js/-/hash.js-1.1.5.tgz#e38ab4b85dfb1e0c40fe9265c0e9b54854c23812"
-  integrity sha512-eWI5HG9Np+eHV1KQhisXWwM+4EPPYe5dFX1UZZH7k/E3JzDEazVH+VGlZi6R94ZqImq+A3D1mCEtrFIfg/E7sA==
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/hash.js/-/hash.js-1.1.7.tgz#0babca538e8d4ee4a0f8988d68866537a003cf42"
+  integrity sha512-taOaskGt4z4SOANNseOviYDvjEJinIkRgmp7LbKP2YTTmVxWBl87s/uzK9r+44BclBSp2X7K1hqeNfz9JbBeXA==
   dependencies:
     inherits "^2.0.3"
     minimalistic-assert "^1.0.1"
@@ -5296,7 +5296,7 @@ history@^4.9.0:
     tiny-warning "^1.0.0"
     value-equal "^1.0.1"
 
-hmac-drbg@^1.0.0:
+hmac-drbg@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/hmac-drbg/-/hmac-drbg-1.0.1.tgz#d2745701025a6c775a6c545793ed502fc0c649a1"
   integrity sha1-0nRXAQJabHdabFRXk+1QL8DGSaE=
@@ -5596,15 +5596,20 @@ inflight@^1.0.4:
     once "^1.3.0"
     wrappy "1"
 
-inherits@2, inherits@2.0.3, inherits@^2.0.1, inherits@^2.0.3, inherits@~2.0.1, inherits@~2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
-  integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
+inherits@2, inherits@^2.0.1, inherits@^2.0.3, inherits@^2.0.4, inherits@~2.0.1, inherits@~2.0.3:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
+  integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
 
 inherits@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.1.tgz#b17d08d326b4423e568eff719f91b0b1cbdf69f1"
   integrity sha1-sX0I0ya0Qj5Wjv9xn5GwscvfafE=
+
+inherits@2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
+  integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
 
 ini@^1.3.5, ini@~1.3.0:
   version "1.3.5"
@@ -6905,6 +6910,11 @@ lodash@^4.16.5, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
 
+lodash@^4.17.19:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
+
 loglevel@^1.4.1:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.6.1.tgz#e0fc95133b6ef276cdc8887cdaf24aa6f156f8fa"
@@ -7148,7 +7158,7 @@ minimalistic-assert@^1.0.0, minimalistic-assert@^1.0.1:
   resolved "https://registry.yarnpkg.com/minimalistic-assert/-/minimalistic-assert-1.0.1.tgz#2e194de044626d4a10e7f7fbc00ce73e83e4d5c7"
   integrity sha512-UtJcAD4yEaGtjPezWuO9wC4nwUnVH/8/Im3yEHQP4b67cXlD/Qr9hdITCU1xDbSEXg2XKNaP8jsReV7vQd00/A==
 
-minimalistic-crypto-utils@^1.0.0, minimalistic-crypto-utils@^1.0.1:
+minimalistic-crypto-utils@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/minimalistic-crypto-utils/-/minimalistic-crypto-utils-1.0.1.tgz#f6c00c1c0b082246e5c4d99dfb8c7c083b2b582a"
   integrity sha1-9sAMHAsIIkblxNmd+4x8CDsrWCo=
@@ -9717,7 +9727,7 @@ react-scripts@3.2.0:
   optionalDependencies:
     fsevents "2.0.7"
 
-react-slick@~0.25.2:
+react-slick@^0.25.2, react-slick@~0.25.2:
   version "0.25.2"
   resolved "https://registry.yarnpkg.com/react-slick/-/react-slick-0.25.2.tgz#56331b67d47d8bcfe2dceb6acab1c8fd5bd1f6bc"
   integrity sha512-8MNH/NFX/R7zF6W/w+FS5VXNyDusF+XDW1OU0SzODEU7wqYB+ZTGAiNJ++zVNAVqCAHdyCybScaUB+FCZOmBBw==
@@ -9825,6 +9835,29 @@ recursive-readdir@2.2.2:
   integrity sha512-nRCcW9Sj7NuZwa2XvH9co8NPeXUBhZP7CRKJtU+cS6PW9FpCIFoI5ib0NT1ZrbNuPoRy0ylyCaUL8Gih4LSyFg==
   dependencies:
     minimatch "3.0.4"
+
+redux-devtools-extension@^2.13.8:
+  version "2.13.9"
+  resolved "https://registry.yarnpkg.com/redux-devtools-extension/-/redux-devtools-extension-2.13.9.tgz#6b764e8028b507adcb75a1cae790f71e6be08ae7"
+  integrity sha512-cNJ8Q/EtjhQaZ71c8I9+BPySIBVEKssbPpskBfsXqb8HJ002A3KRVHfeRzwRo6mGPqsm7XuHTqNSNeS1Khig0A==
+
+redux-devtools-instrument@^1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/redux-devtools-instrument/-/redux-devtools-instrument-1.10.0.tgz#036caf79fa1e5f25ec4bae38a9af4f08c69e323a"
+  integrity sha512-X8JRBCzX2ADSMp+iiV7YQ8uoTNyEm0VPFPd4T854coz6lvRiBrFSqAr9YAS2n8Kzxx8CJQotR0QF9wsMM+3DvA==
+  dependencies:
+    lodash "^4.17.19"
+    symbol-observable "^1.2.0"
+
+redux-devtools@^3.5.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/redux-devtools/-/redux-devtools-3.7.0.tgz#5bc2d50227d94ce95c79dbfdf2ffc7a23c553553"
+  integrity sha512-Lnx3UX7mnJij2Xs+RicPK1GyKkbuodrCKtfYmJsN603wC0mc99W//xCAskGVNmRhIXg4e57m2k1CyX0kVzCsBg==
+  dependencies:
+    "@types/prop-types" "^15.7.3"
+    lodash "^4.17.19"
+    prop-types "^15.7.2"
+    redux-devtools-instrument "^1.10.0"
 
 redux@^4.0.4:
   version "4.0.4"
@@ -10485,6 +10518,11 @@ slice-ansi@^2.1.0:
     ansi-styles "^3.2.0"
     astral-regex "^1.0.0"
     is-fullwidth-code-point "^2.0.0"
+
+slick-carousel@^1.8.1:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/slick-carousel/-/slick-carousel-1.8.1.tgz#a4bfb29014887bb66ce528b90bd0cda262cc8f8d"
+  integrity sha512-XB9Ftrf2EEKfzoQXt3Nitrt/IPbT+f1fgqBdoxO3W/+JYvtEOW6EgxnWfr9GH6nmULv7Y2tPmEX3koxThVmebA==
 
 snapdragon-node@^2.0.1:
   version "2.1.1"
